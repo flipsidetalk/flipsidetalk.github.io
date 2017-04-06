@@ -87,7 +87,7 @@ function writeIdeology(ideology) {
 
 function writeQuestion(question, value) {
   if (userId === undefined) return;
-  database.ref('users/' + userId + '/questions/' + question).update({
+  database.ref('users/' + userId + '/survey-1/' + question).update({
     response: value
   });
 }

@@ -227,6 +227,9 @@ footer {
   .align-right-except-xs, .align-left-except-xs {
     text-align: center;
   }
+  #submit-survey {
+    margin-left: auto;
+}
 }
 @media(min-width:768px){
   #inputEmail {
