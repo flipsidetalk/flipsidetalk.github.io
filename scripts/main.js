@@ -40,6 +40,9 @@ $(function(){
     writeQuestion(question, values);
   });
 
+  var quoteNum = Math.ceil(Math.random() * 3);
+  $('#quote-' + quoteNum).show();
+
   function getSelectedValues() {
     return $("input[type=checkbox]:checked").map(
        function () {

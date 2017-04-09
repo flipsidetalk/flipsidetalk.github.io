@@ -103,7 +103,7 @@ img.icon {
   height: 100px;
 }
 
-/* BLOCKQUOTE
+/* QUOTE
 -------------------------------------------------- */
 blockquote {
 font-size: 18px;
@@ -118,7 +118,6 @@ width:auto;
 display:table;
 text-align: left;
 }
-
 blockquote:before {
 font-family: Georgia, serif;
 display: block;
@@ -129,15 +128,16 @@ position: absolute;
 left: -20px;
 top: -20px;
 }
-
 blockquote cite {
 font-size: 14px;
 display: block;
 margin-top: 5px;
 }
-
 blockquote cite:before {
 content: "\2014 \2009";
+}
+.quote {
+  display: none;
 }
 
 /* FORM
