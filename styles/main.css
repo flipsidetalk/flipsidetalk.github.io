@@ -11,7 +11,7 @@ body {
   padding-top:70px;
   color: #5a5a5a;
   font-family: 'Montserrat', sans-serif;
-  background-color: #e9ebee;
+  background-color: #DB6061;
 }
 body.privacy-terms {
   background-color: #34495D;
@@ -48,7 +48,8 @@ hr {
 -------------------------------------------------- */
 .navbar{
   height: 70px;
-  background-color: rgba(225, 225, 225, 0.8)
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
 }
 .nav-text{
   font-size: 16px;
@@ -90,11 +91,22 @@ hr {
 }
 .section-first {
   padding-top: 0;
+  height:800px;
+}
+.section-first-text{
+  padding-top: 15px;
 }
 .section-heading {
+  font-size: 50px;
   font-weight: 300;
   line-height: 1;
 }
+.sub-heading{
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 .section-heading.center-heading {
   margin-bottom: 30px;
 }
@@ -115,6 +127,13 @@ hr {
 }
 img.icon {
   height: 100px;
+}
+
+.landing-image{
+  padding-top: 20px;
+  max-height:700px;
+  height: auto;
+  width: auto;
 }
 
 /* QUOTE
