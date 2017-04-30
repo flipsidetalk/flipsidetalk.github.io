@@ -96,12 +96,21 @@ hr {
   height:800px;
 }
 .section-first-text{
-  padding-top: 15px;
+  padding-top: 65px;
 }
-.section-heading {
+.section-second-text{
+  padding-top: 35px;
+}
+.title {
   font-size: 50px;
   font-weight: 300;
   line-height: 1;
+}
+
+.section-heading {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 .sub-heading{
   font-size: 38px;
