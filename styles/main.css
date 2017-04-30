@@ -40,7 +40,9 @@ hr {
   text-decoration: underline;
 }
 .text {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.5;
 }
 
 
@@ -87,7 +89,7 @@ hr {
   margin-top: 40px;
 }
 .section {
-  padding: 80px 65px;
+  padding: 50px 65px;
 }
 .section-first {
   padding-top: 0;
@@ -134,6 +136,10 @@ img.icon {
   max-height:700px;
   height: auto;
   width: auto;
+}
+
+.section-col{
+  padding: 0 20px;
 }
 
 /* QUOTE
@@ -218,7 +224,8 @@ content: "\2014 \2009";
   /* THEME COLORS
 -------------------------------------------------- */
 .blue {
-  background-color: #6287A4;
+  background-color: #587A95
+  /*background-color: #6287A4; */
 }
 .dark-blue {
   background-color: #34495D;
