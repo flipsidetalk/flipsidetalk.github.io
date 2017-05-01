@@ -297,3 +297,13 @@ footer {
 @media(min-width:1200px){
 
 }
+
+/* CONTACT
+-------------------------------------------------- */
+.contact-form{
+  background-color: #587A95
+}
+
+.contact-content{
+  height: auto;
+}
