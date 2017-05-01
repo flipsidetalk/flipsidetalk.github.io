@@ -74,7 +74,7 @@
         </li>
 
         <li>
-          <a href="https://www.google.com">
+          <a href="#signup-anchor">
             <button class="btn btn-default btn-sm submission white-text blue">Sign Up</button>
           </a>
         </li>
@@ -91,11 +91,19 @@
       <br><br><br>
       <p class="text">Flipside is now available for early access!</p>
 
-      <p class="text">Signing up takes less than 3 minutes.</p><br>
+      <p class="text">Signing up takes less than 2 minutes.</p><br>
 
 
-      <a class="btn btn-default btn-lg depolarize-btn submission white-text blue" href="">Get Early Access</a>
-    </div>
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="inputEmail">Email address</label>
+          <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Email" aria-describedby="inputError">
+          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+          <span id="inputError" class="sr-only">(error)</span>
+        </div>
+        <button type="submit" id="sign-up" class="btn btn-default btn-lg submission white-text blue">Sign Up</button>
+      </div>
+    </form>
     <div class="col-xs-12 col-sm-5">
       <img class="section-image img-responsive center-block landing-image" src="img/landing.png" alt="landing screenshot">
     </div>
@@ -103,15 +111,18 @@
 
   <div class="row section blue white-text">
     <h1 class="section-heading center-heading margin-top-0">Cut through the noise.</h1>
-    <div class="col-xs-12 col-sm-7">
+    <div class="col-xs-12 col-md-offset-2 col-md-4">
       <img class="section-image img-responsive center-block landing-image" src="img/sectiontwo.png" alt="section two screenshot">
     </div>
-    <div class="col-xs-12 col-sm-5 section-second-text">
+    <div class="col-xs-12 col-md-4 section-second-text">
       <br>
       <p class="text">The only way to bridge our country’s divides is to understand one another. <br><br>But most of the time, the other side just doesn’t make sense.
-        Using our smart content curation techniques, Flipside tailors what you see to not only broaden your exposure, but to be interesting rather than crazy.
+        Using our smart content curation, FlipSide tailors the best articles from across the internet to broaden your exposure to different perspectives and topics.
+        You can also submit articles and comments to influence your fellow Americans.
       </p><br>
-      <button type="submit" id="sign-up" class="btn btn-default btn-lg submission dark-blue white-text">Get Early Access</button>
+      <a href="#signup-anchor">
+        <button class="btn btn-default btn-lg submission dark-blue white-text">Get Early Access</button>
+      </a>
     </div>
   </div>
 
@@ -142,12 +153,14 @@
         <img class="img-responsive center-block hidden-sm icon" src="img/engage.png" alt="Engage icon">
         <h3>3. Engage meaningfully</h2>
           <p class="text">Discuss and debate about topics that matter with people who will listen.</p>
+          <a name="signup-anchor"></a>
         </div>
       </div>
-
       <div class="row section red white-text" style="background:url(img/chamber-purple.jpg) no-repeat center center; background-size:cover;">
-        <h1 class="section-heading center-heading margin-top-0">Join the movement.</h2><br>
-          <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+        <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+
+          <h1 class="section-heading margin-top-0">Join the movement.</h2>
+
             <p class="text">
               We are journalists, social scientists, and political junkies from across the political spectrum.
               We are tired of the “filter bubble” and are passionate about breaking it. After talking to Americans
@@ -176,9 +189,9 @@
           </div>
         </div>
         <div class="row ideology">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
             <h3 class="center-heading" title="Courtesy of Pew Research Center.">
-              Select the political ideology that is most similar to your own.
+              Final Step: Select the political ideology that is most similar to your own.
             </h3>
             <ul class="nav nav-tabs" id="ideology-tabs">
               <li class="active"><a data-toggle="tab" href="#solid-lib">Solid Liberal</a></li>
@@ -192,15 +205,25 @@
             <div class="tab-content">
               <div id="solid-lib" class="tab-pane fade in active">
                 <h3>Solid Liberal</h3>
-                <p>Generally affluent and highly educated, most Solid Liberals strongly support the social safety net and take very liberal positions on virtually all issues. Most say they always vote Democratic and are unflagging supporters of Barack Obama. Overall, Solid Liberals are very optimistic about the nation’s future and are the most likely to say that America’s success is linked to its ability to change, rather than its reliance on long-standing principles. On foreign policy, Solid Liberals overwhelmingly believe that good diplomacy – rather than military strength – is the best way to ensure peace.</p>
+                <ul>
+                  <li>The government should be more progressive on social issues.</li>
+                  <li>Good diplomacy – rather than military strength – is the best way to ensure peace.</li>
+                  <li>Social programs helping the poor are good.</li>
+                </ul>
               </div>
               <div id="faith-fam" class="tab-pane fade">
                 <h3>Faith and Family Left</h3>
-                <p>The Faith and Family Left combine strong support for activist government with conservative attitudes on many social issues. They are very racially diverse – this is the only typology group that is “majority-minority.” The Faith and Family Left generally favor increased government aid for the poor even if it adds to the deficit and believe that government should do more to solve national problems. Most oppose same-sex marriage and legalizing marijuana and most say religion and family are at the center of their lives. </p>
+                <ul>
+                  <li>It’s the government’s role to spend more to solve national problems like poverty.</li>
+                  <li>Same-sex marriage, abortion, and/or marijuana should be illegal.</li>
+                </ul>
               </div>
               <div id="next-gen" class="tab-pane fade">
                 <h3>Next Generation Left</h3>
-                <p>Generally young, well-educated and financially comfortable, the Next Generation Left have very liberal attitudes on many issues, including homosexuality, abortion, the environment and foreign policy. While overall supportive of an activist government, most are wary of expanding the social safety net. Most also have relatively positive views of Wall Street’s impact on the economy. While most affiliate with the Democratic Party or lean Democratic, few consider themselves strong Democrats.</p>
+                <ul>
+                  <li>It’s the government’s role to spend more to solve national problems like poverty.</li>
+                  <li>Same-sex marriage, abortion, and/or marijuana should be illegal.</li>
+                </ul>
               </div>
               <div id="skeptic" class="tab-pane fade">
                 <h3>Hard-Pressed Skeptic</h3>
