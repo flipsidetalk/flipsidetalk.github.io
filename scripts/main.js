@@ -6,11 +6,36 @@ $(function(){
     if (validateEmail(email)) {
       writeEmail(email);
       field.val("");
-      $('.sign-up').hide();
-      $('.ideology').show();
     } else {
       $('#signup > form > .form-group').addClass('has-error').addClass('has-feedback');
       $('#signup > form > .form-group > .glyphicon-remove').show();
+    }
+  });
+  $('#sign-up-top').click(function(e) {
+    e.preventDefault();
+    var field = $('#inputEmail-top');
+    var email = field.val();
+    if (validateEmail(email)) {
+      writeEmail(email);
+      field.val("");
+    } else {
+      $('#signup-top > form > .form-group').addClass('has-error').addClass('has-feedback');
+      $('#signup-top > form > .form-group > .glyphicon-remove').show();
+    }
+  });
+
+  $('#submit-contact-us').click(function(e) {
+    e.preventDefault();
+    var name = $('#name-contact-us').val();
+    var emailField = $('#email-contact-us');
+    var email = emailField.val();
+    var message = $('#message-contact-us').val()
+    if (validateEmail(email)) {
+      writeContact(name, email, message);
+      $('#contact-modal').modal('hide');
+    } else {
+      $('#contact-us-form > .form-group.email').addClass('has-error').addClass('has-feedback');
+      $('#contact-us-form > .form-group.email > .glyphicon-remove').show();
     }
   });
 
@@ -49,6 +74,10 @@ $(function(){
          return $(this).attr('value');
        }).get().join(",");
   }
+  // $('#contact-link').click(function() {
+  //   $('#contact-modal').modal('show');
+  // })
+
 });
 
 
@@ -76,6 +105,16 @@ firebase.auth().onAuthStateChanged(function(user) {
 function writeEmail(email) {
   database.ref('users/' + userId).update({
     email: email,
+    location: loc,
+    time: new Date(Date.now()).toUTCString()
+  });
+}
+
+function writeContact(name, email, message) {
+  database.ref('contact-us/' + userId).update({
+    name: name,
+    email: email,
+    message: message,
     location: loc,
     time: new Date(Date.now()).toUTCString()
   });

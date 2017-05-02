@@ -8,10 +8,8 @@
 
   <!-- fb meta tags -->
   <meta property="og:image" content="img/handshake.jpg" />
-
-  <meta name="description" content="Creating civil discourse with curated articles from different viewpoints.">
-
-  <meta property="og:title" content="Flipside -- A new side of news" />
+  <meta name="description" content="Creating civil discourse through presenting curated articles from different viewpoints.">
+  <meta property="og:title" content="Flipside — A new side of news" />
 
 
   <!-- Favicons -->
@@ -68,8 +66,8 @@
     <div class="collapse navbar-collapse" id="my-nav-bar">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="https://www.google.com">
-            <p class="nav-text"><b>Contact</b></p>
+          <a href="#contact-modal" data-toggle="modal" id="contact-link">
+            <p class="nav-text">Contact</p>
           </a>
         </li>
 
@@ -86,6 +84,203 @@
   </div>
 </nav>
 
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      </div>
+      <div class="modal-body">
+        <div class="row section blue white-text" style="height: auto;">
+          <div class="col-sm-12 col-md-5">
+            <h1 class="title"><b>Talk to us!</b></h1>
+            <h2 class="sub-heading">We'd love to chat.</h1>
+            <br><br><br>
+
+          </div>
+          <div class=" col-sm-12 col-md-offset-1 col-md-6">
+            <form id="contact-us-form">
+              <!-- Label and input for name -->
+              <div class="form-group">
+                <label for="name" class="control-label">
+                  Name
+                </label>
+
+                <input type="text" id="name-contact-us" name="name" placeholder="Flip Side" class="form-control">
+              </div>
+
+              <!-- Label and input for email -->
+              <div class="form-group email">
+                <label for="email" class="control-label">
+                  Email
+                </label>
+
+                <input type="text" id="email-contact-us" name="email" placeholder="flipside@email.com" class="form-control">
+                <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                <span id="inputError" class="sr-only">(error)</span>
+              </div>
+
+
+              <!-- Label and input for message -->
+              <div class="form-group">
+                <label for="body" class="control-label">
+                  Message
+                </label>
+                <textarea id="message-contact-us" name="body" placeholder="Hello! How are you?" class="form-control" rows="3"></textarea>
+              </div>
+
+              <button class="btn btn-default btn-lg depolarize-btn submission white-text red" id="submit-contact-us">Send</button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="survey-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row survey">
+          <div class="col-xs-12">
+            <h3 class="center-heading">
+              Final Step: Answer 7 survey questions to help us learn more about you.
+            </h3>
+            <ol>
+              <li>
+                <span>Government</span>
+                <div class="input-group">
+                  <input type="radio" name="q1" value="1">
+                  <span>The government should play a more activist role than it does.</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q1" value="2">
+                  <span>The best government is small government.</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q1" value="3">
+                  <span>Not sure.</span>
+                </div>
+              </li>
+              <li>
+                <span>Social Values</span>
+                <div class="input-group">
+                  <input type="radio" name="q2" value="1">
+                  <span>The legalization of same-sex marriage and/or abortion and/or marijuana is a good thing</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q2" value="2">
+                  <span>The legalization of same-sex marriage and/or abortion and/or marijuana represents a decline in morality</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q2" value="3">
+                  <span>Not sure.</span>
+                </div>
+              </li>
+              <li>
+                <span>Immigration</span>
+                <div class="input-group">
+                  <input type="radio" name="q3" value="1">
+                  <span>Immigrants strengthen our country</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q3" value="2">
+                  <span>We need to restrict immigration.</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q3" value="3">
+                  <span>Not sure.</span>
+                </div>
+              </li>
+              <li>
+                <span>Global Affairs</span>
+                <div class="input-group">
+                  <input type="radio" name="q4" value="1">
+                  <span>The U.S. should play an active role in global affairs</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q4" value="2">
+                  <span>The U.S. should focus on fixing its own problems before getting involved in global affairs.</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q4" value="3">
+                  <span>Not sure.</span>
+                </div>
+              </li>
+              <li>
+                <span>Foreign Policy</span>
+                <div class="input-group">
+                  <input type="radio" name="q5" value="1">
+                  <span>Military intervention usually provides the best solution to global problems. </span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q5" value="2">
+                  <span>Diplomacy usually provides the best solution to global problems. </span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q5" value="3">
+                  <span>Not sure.</span>
+                </div>
+              </li>
+              <li>
+                <span>Business</span>
+                <div class="input-group">
+                  <input type="radio" name="q6" value="1">
+                  <span>Wall street and corporations have hurt the country in recent years.</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q6" value="2">
+                  <span>The negative impact of big business has been overstated</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q6" value="3">
+                  <span>Not sure.</span>
+                </div>
+              </li>
+              <li>
+                <span>Welfare</span>
+                <div class="input-group">
+                  <input type="radio" name="q7" value="1">
+                  <span>The government should expand the social safety net to help the poor</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q7" value="2">
+                  <span>Expanding the social safety net would do more harm than good.</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q7" value="3">
+                  <span>Not sure.</span>
+                </div>
+              <li>
+                <span>Lastly, would you be interested in helping us improve and test Flipside?</span>
+                <div class="input-group">
+                  <input type="radio" name="q8" value="1">
+                  <span>Yes!</span>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="q8" value="2">
+                  <span>No, thanks.</span>
+                </div>
+              </li>
+              </ol>
+              <button type="submit" id="submit-survey" class="btn btn-default btn-lg submission white-text blue">Submit</button>
+            </div>
+          </div>
+          <div class="row thanks">
+            <div class="col-xs-12">
+              <h1 class="section-heading center-heading margin-top-0">Thanks! You'll hear from us shortly.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container content">
   <div class="row section section-first red white-text">
     <div class="col-xs-12 col-sm-7 section-first-text">
@@ -96,17 +291,20 @@
 
       <p class="text">Signing up takes less than 2 minutes.</p><br>
 
-
-      <form class="form-inline">
-        <div class="form-group">
-          <label class="sr-only" for="inputEmail">Email address</label>
-          <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Email" aria-describedby="inputError">
-          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-          <span id="inputError" class="sr-only">(error)</span>
-        </div>
-        <button type="submit" id="sign-up" class="btn btn-default btn-lg submission white-text blue">Sign Up</button>
+      <div class="sign-up top">
+        <div id="signup-top" class="col-xs-12">
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="inputEmail">Email address</label>
+              <input type="email" class="form-control input-lg" id="inputEmail-top" placeholder="Email" aria-describedby="inputError">
+              <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span id="inputError-top" class="sr-only">(error)</span>
+            </div>
+            <button type="submit" id="sign-up-top" class="btn btn-default btn-lg submission white-text blue" href="#survey-modal" data-toggle="modal">Sign Up</button>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
     <div class="col-xs-12 col-sm-5">
       <img class="section-image img-responsive center-block landing-image" src="img/landing.png" alt="landing screenshot">
     </div>
@@ -186,140 +384,9 @@
                   <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                   <span id="inputError" class="sr-only">(error)</span>
                 </div>
-                <button type="submit" id="sign-up" class="btn btn-default btn-lg submission white-text blue">Sign Up</button>
+                <button type="submit" id="sign-up" class="btn btn-default btn-lg submission white-text blue" href="#survey-modal" data-toggle="modal">Sign Up</button>
               </div>
             </form>
-          </div>
-        </div>
-        <div class="row survey">
-          <div class="col-xs-12">
-            <h3 class="center-heading">
-              Final Step: Answer 7 survey questions to help us learn more about you.
-            </h3>
-            <ol>
-              <li>
-                <span>Government</span>
-                <div class="input-group">
-                  <input type="radio" name="q1" value="1">
-                  <span>The government should play a more activist role than it does.</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q1" value="2">
-                  <span>The best government is small government.</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q1" value="3">
-                  <span>Not sure.</span>
-                </div>
-              </li>
-              <li>
-                <span>Social Values</span>
-                <div class="input-group">
-                  <input type="radio" name="q2" value="1">
-                  <span>The legalization of same-sex marriage and/or abortion and/or marijuana is a good thing</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q2" value="2">
-                  <span>The legalization of same-sex marriage and/or abortion and/or marijuana represents a decline in morality</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q2" value="3">
-                  <span>Not sure.</span>
-                </div>
-              </li>
-              <li>
-                <span>Immigration</span>
-                <div class="input-group">
-                  <input type="radio" name="q3" value="1">
-                  <span>Immigrants strengthen our country</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q3" value="2">
-                  <span>We need to restrict immigration.</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q3" value="3">
-                  <span>Not sure.</span>
-                </div>
-              </li>
-              <li>
-                <span>Global Affairs</span>
-                <div class="input-group">
-                  <input type="checkbox" name="q4" value="1">
-                  <span>The U.S. should play an active role in global affairs</span>
-                </div>
-                <div class="input-group">
-                  <input type="checkbox" name="q4" value="2">
-                  <span>The U.S. should focus on fixing its own problems before getting involved in global affairs.</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q4" value="3">
-                  <span>Not sure.</span>
-                </div>
-              </li>
-              <li>
-                <span>Foreign Policy</span>
-                <div class="input-group">
-                  <input type="radio" name="q5" value="1">
-                  <span>Military intervention usually provides the best solution to global problems. </span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q5" value="2">
-                  <span>Diplomacy usually provides the best solution to global problems. </span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q5" value="3">
-                  <span>Not sure.</span>
-                </div>
-              </li>
-              <li>
-                <span>Business</span>
-                <div class="input-group">
-                  <input type="radio" name="q6" value="1">
-                  <span>Wall street and corporations have hurt the country in recent years.</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q6" value="2">
-                  <span>The negative impact of big business has been overstated</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q6" value="3">
-                  <span>Not sure.</span>
-                </div>
-              </li>
-              <li>
-                <span>Welfare</span>
-                <div class="input-group">
-                  <input type="radio" name="q7" value="1">
-                  <span>The government should expand the social safety net to help the poor</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q7" value="2">
-                  <span>Expanding the social safety net would do more harm than good.</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q7" value="3">
-                  <span>Not sure.</span>
-                </div>
-              <li>
-                <span>Lastly, would you be interested in helping us improve and test Flipside?</span>
-                <div class="input-group">
-                  <input type="radio" name="q8" value="1">
-                  <span>Yes!</span>
-                </div>
-                <div class="input-group">
-                  <input type="radio" name="q8" value="2">
-                  <span>No, thanks.</span>
-                </div>
-              </li>
-              </ol>
-              <button type="submit" id="submit-survey" class="btn btn-default btn-lg submission white-text blue">Submit</button>
-            </div>
-          </div>
-          <div class="row thanks">
-            <div class="col-xs-12">
-              <h1 class="section-heading center-heading margin-top-0">Thanks! You'll hear from us shortly.</h1>
-            </div>
           </div>
         </div>
 
