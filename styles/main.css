@@ -2,15 +2,16 @@
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
-html, body {
+html {
   position: relative;
   height: 100%;
   overflow-x: hidden;
 }
 body {
+  padding-top:70px;
   color: #5a5a5a;
   font-family: 'Montserrat', sans-serif;
-  background-color: #e9ebee;
+  background-color: #DB6061;
 }
 body.privacy-terms {
   background-color: #34495D;
@@ -39,8 +40,24 @@ hr {
   text-decoration: underline;
 }
 .text {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.5;
 }
+
+
+/* NAV STYLES
+-------------------------------------------------- */
+.navbar{
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+.nav-text{
+  font-size: 16px;
+  padding-top: 12px;
+}
+
 
 /* CONTENT
 -------------------------------------------------- */
@@ -72,15 +89,34 @@ hr {
   margin-top: 40px;
 }
 .section {
-  padding: 80px 0;
+  padding: 50px 65px;
 }
 .section-first {
   padding-top: 0;
 }
-.section-heading {
+.section-first-text{
+  padding-top: 65px;
+}
+.section-second-text{
+  padding-top: 35px;
+}
+.title {
+  font-size: 50px;
   font-weight: 300;
   line-height: 1;
 }
+
+.section-heading {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.sub-heading{
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 .section-heading.center-heading {
   margin-bottom: 30px;
 }
@@ -96,11 +132,22 @@ hr {
 .row.ideology {
   padding: 0 20px;
 }
-.ideology, .survey, .thanks {
+.ideology, .thanks {
   display: none;
 }
 img.icon {
   height: 100px;
+}
+
+.landing-image{
+  padding-top: 20px;
+  max-height:700px;
+  height: auto;
+  width: auto;
+}
+
+.section-col{
+  padding: 0 20px;
 }
 
 /* QUOTE
@@ -185,7 +232,8 @@ content: "\2014 \2009";
   /* THEME COLORS
 -------------------------------------------------- */
 .blue {
-  background-color: #6287A4;
+  background-color: #587A95
+  /*background-color: #6287A4; */
 }
 .dark-blue {
   background-color: #34495D;
@@ -207,9 +255,6 @@ content: "\2014 \2009";
 -------------------------------------------------- */
 footer {
   text-align: center;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 /* RESPONSIVE CSS
@@ -249,4 +294,14 @@ footer {
 }
 @media(min-width:1200px){
 
+}
+
+/* CONTACT
+-------------------------------------------------- */
+.contact-form{
+  background-color: #587A95
+}
+
+.contact-content{
+  height: auto;
 }
