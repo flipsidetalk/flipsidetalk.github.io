@@ -153,35 +153,35 @@ img.icon {
 /* QUOTE
 -------------------------------------------------- */
 blockquote {
-font-size: 18px;
-font-style: italic;
-width: 500px;
-margin: 0.25em 0;
-padding: 0.35em 40px;
-line-height: 1.45;
-position: relative;
-border-left: none;
-width:auto;
-display:table;
-text-align: left;
+  font-size: 18px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  border-left: none;
+  width:auto;
+  display:table;
+  text-align: left;
 }
 blockquote:before {
-font-family: Georgia, serif;
-display: block;
-padding-left: 10px;
-content: "\201C";
-font-size: 80px;
-position: absolute;
-left: -20px;
-top: -20px;
+  font-family: Georgia, serif;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
 }
 blockquote cite {
-font-size: 14px;
-display: block;
-margin-top: 5px;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
 }
 blockquote cite:before {
-content: "\2014 \2009";
+  content: "\2014 \2009";
 }
 .quote {
   display: none;
@@ -229,7 +229,7 @@ content: "\2014 \2009";
 .form-control-feedback {
   display: none;
 }
-  /* THEME COLORS
+/* THEME COLORS
 -------------------------------------------------- */
 .blue {
   background-color: #587A95
@@ -274,8 +274,21 @@ footer {
   }
   #submit-survey {
     margin-left: auto;
+  }
 }
+
+
+@media (max-width: 500px) {
+  body{padding-top: 10px;}
+  .title {font-size:4rem;} /*1rem = 16px*/
+  .sub-heading{font-size: 2.7rem;}
+  .section-heading{font-size: 3rem;}
+  .text{font-size: 17px;}
+  .section{padding: 50px 30px;}
+  .icon {padding-top: 20px;}
+
 }
+
 @media(min-width:768px){
   #inputEmail {
     width: 216px;
