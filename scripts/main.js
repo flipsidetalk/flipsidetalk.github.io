@@ -103,6 +103,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 function writeEmail(email) {
+  ga('send', 'event', 'Submit', 'signup');
   database.ref('users/' + userId).update({
     email: email,
     location: loc,
