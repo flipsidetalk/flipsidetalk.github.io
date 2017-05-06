@@ -102,7 +102,7 @@ hr {
 }
 .title {
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1;
 }
 
@@ -149,7 +149,9 @@ img.icon {
 .section-col{
   padding: 0 20px;
 }
-
+.blue-modal-body {
+  background-color: #587A95;
+}
 /* QUOTE
 -------------------------------------------------- */
 blockquote {
