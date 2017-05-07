@@ -153,6 +153,9 @@ img.icon {
 .blue-modal-body {
   background-color: #587A95;
 }
+input[type='radio'] {
+  margin-right: 5px;
+}
 /* QUOTE
 -------------------------------------------------- */
 blockquote {
