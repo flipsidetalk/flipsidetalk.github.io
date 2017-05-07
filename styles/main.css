@@ -25,6 +25,7 @@ body.privacy-terms {
 a:focus, a:hover {
   color: #6287A4;
   text-decoration: none;
+  outline: 0;
 }
 a {
   color: inherit;
