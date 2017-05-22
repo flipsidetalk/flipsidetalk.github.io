@@ -156,6 +156,9 @@ img.icon {
 input[type='radio'] {
   margin-right: 5px;
 }
+.no-center {
+  text-align: left;
+}
 /* QUOTE
 -------------------------------------------------- */
 blockquote {
